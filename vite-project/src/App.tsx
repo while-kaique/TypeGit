@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <h1>Github Finder</h1>
+      <h1 className="text-white text-center text-4xl font-semibold my-10">GihHub Finder</h1>
       <Outlet />
     </>
   )

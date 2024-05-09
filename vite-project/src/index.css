@@ -1,23 +1,5 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-* {
-  padding: 0;
-  margin: 0px;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-  color: black;
-}
-
-body {
-  background-color: #0e1129;
-  padding: 2rem;
-}
-
-p{
-   text-align: center;
-}
-
-a {
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
