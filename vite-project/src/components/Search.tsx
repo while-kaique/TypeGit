@@ -7,7 +7,6 @@ import { useState, KeyboardEvent } from "react";
 import { BsSearch } from "react-icons/bs"
 
 const Search = ({loadUser}: SearchProps) => {
-
     const [src, setSrc] = useState<string>('')
 
     function handleKeyDown(e: KeyboardEvent){
