@@ -8,6 +8,7 @@ import { UserProps } from '../types/user.ts'
 import { SearchContextType } from "../types/search";
 
 import SearchContext from '../contexts/SearchContext.tsx'
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -83,8 +84,10 @@ const Home = () => {
           </div>
 
           <div id="btn" className='mx-auto w-2/5 h-12'>
-            <button className=' w-full h-full bg-purple-700 rounded text-white hover:bg-purple-500 transition ease-linear'>Ver melhores projetos
-          </button>
+            <Link to={`https://github.com/${user.login}`}>
+              <button className=' w-full h-full bg-purple-700 rounded text-white hover:bg-purple-500 transition ease-linear'>Ver melhores projetos
+              </button>
+            </Link>
           </div>
         </div>
       :
